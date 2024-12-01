@@ -17,13 +17,13 @@ html, body {
 }
 
 body {
-    background-color: #000;
+    background-color: #222;
     padding: 0 100px;
 }
 
 .main {
     align-items: center;
-    background-color: #000;
+    background-color: #222;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -36,17 +36,40 @@ body {
     flex-direction: row;
     height: 100px;
     padding: 0 20px;
+    justify-content: space-between;
     width: 100%;
 }
 
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.row > a {
+    margin: 0 30px;
+}
+
 .icon {
+    border-radius: 70px;
     height: 70px;
+}
+
+.info {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 .title {
     color: #fff;
-    font-size: 35px;
-    margin-left: 20px;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #ccc;
+    margin-top: 5px;
 }
 
 .text {
@@ -60,14 +83,62 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.contacts {
-    bottom: 0;
+.cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: auto;
-    margin-top: 40px;
-    position: absolute;
+    margin: 20px 0;
+    padding: 20px 0;
+    position: relative;
+    width: 80%;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    height: fit-content;
+    margin: 30px 0;
+    width: 80%;
+}
+
+.gitlink {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.gitlink > a {
+    color: #3ab489;
+}
+
+.gitlink > p {
+    color: #fff;
+    margin: 0 -30px;
+}
+
+.about {
+    color: #fff;
+    font-size: 20px;
+    margin: 25px 50px;
+}
+
+a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
 }
 
 .app-icon {
-    height: 100px;
-    margin: 30px;
+    height: 40px;
+    margin: 20px;
+}
+
+.link {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
 }
