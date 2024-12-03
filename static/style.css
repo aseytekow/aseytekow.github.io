@@ -47,7 +47,15 @@ body {
 }
 
 .row > a {
-    margin: 0 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    overflow: hidden;
+    transition: .5s;
+    width: 80px;
+}
+
+.row > a:hover {
+    background: rgba(0, 0, 0, .2);
 }
 
 .icon {
@@ -137,8 +145,21 @@ a {
     margin: 20px;
 }
 
-.link {
+.footer {
+    align-items: center;
+    background-color: #111;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+}
+
+.footer-text {
     color: #fff;
     font-size: 25px;
-    text-decoration: none;
 }
