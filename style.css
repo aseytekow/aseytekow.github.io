@@ -354,7 +354,7 @@ footer {
     display: none;
   }
   .hero h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -364,5 +364,5 @@ footer {
         padding: 0 15px;
         top: 15px;
     }
-    .logo span { display: none; } /* Mobilde sadece AK kalsın istersen */
+    .logo span { display: none; }
 }
