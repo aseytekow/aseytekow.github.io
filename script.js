@@ -22,7 +22,7 @@ async function fetchGitHubProjects() {
       userNameLink.textContent = `@${userData.login}`;
 
     const response = await fetch(
-      `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`
+      `https://api.github.com/users/${username}/repos?sort=updated`
     );
     const repos = await response.json();
 
