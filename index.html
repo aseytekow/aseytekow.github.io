@@ -1,33 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./static/style.css">
-    <title>aseytekow</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>aseytekow | Portfolio</title>
   </head>
   <body>
-    <div class="main">
-      <div class="toolbar">
-        <div class="row">
-          <img src="./static/icon.jpg" alt="Icon" class="icon">
-          <div class="info">
-            <p class="title">Akmuhammet Seytekow</p>
-            <p class="subtitle">Android & Full-stack web developer</p>
+    <header>
+      <a href="#" class="logo">Akmuhammet<span>Seytekow</span></a>
+      <nav>
+        <a href="#focus">Focus</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="badge">Security-first Developer</div>
+        <h1>Building Secure <span>Architectures</span></h1>
+        <p>I specialize in building high-performance backend systems and conducting advanced security assessments. Currently focusing on the intersection of Golang and Cybersecurity.</p>
+      </section>
+
+      <h2 class="section-title" id="focus">
+        <svg class="icon-svg" viewBox="0 0 24 24">
+          <path d="M13 10V3L4 14H11V21L20 10H13Z" />
+        </svg>
+        Current Focus
+      </h2>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h4>GoLang</h4>
+          <p style="font-size: 0.8rem; color: var(--text-dim)">Backend Infrastructure</p>
+        </div>
+        <div class="focus-card">
+          <h4>Svelte</h4>
+          <p style="font-size: 0.8rem; color: var(--text-dim)">Performant Frontend</p>
+        </div>
+        <div class="focus-card">
+          <h4>PostgreSQL</h4>
+          <p style="font-size: 0.8rem; color: var(--text-dim)">Relational Database</p>
+        </div>
+        <div class="focus-card">
+          <h4>Cybersecurity</h4>
+          <p style="font-size: 0.8rem; color: var(--text-dim)">Pentesting & Auditing</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="stack">
+        <svg class="icon-svg" viewBox="0 0 24 24">
+          <path
+            d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"
+          />
+        </svg>
+        Technical Stack
+      </h2>
+      <div class="tech-container">
+        <div class="tech-category">
+          <h3>
+            <svg class="icon-inline" viewBox="0 0 24 24">
+              <path
+                d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+              />
+            </svg>Languages
+          </h3>
+          <div class="tech-list">
+            <span class="tech-item">GoLang</span>
+            <span class="tech-item">Rust</span>
+            <span class="tech-item">TypeScript</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">Python</span>
+            <span class="tech-item">C++</span>
+            <span class="tech-item">Java</span>
+            <span class="tech-item">C#</span>
+            <span class="tech-item">Kotlin</span>
           </div>
         </div>
-        <div class="row">
-          <a href="https://github.com/aseytekow">
-            <img src="./static/github.png" alt="GitHub" class="app-icon">
-          </a>
-          <a href="https://www.instagram.com/aseytekow.04">
-            <img src="./static/instagram.png" alt="Instagram" class="app-icon">
-          </a>
+        <div class="tech-category">
+          <h3>
+            <svg class="icon-inline" viewBox="0 0 24 24">
+              <path
+                d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"
+                />
+            </svg>Frameworks
+          </h3>
+          <div class="tech-list">
+            <span class="tech-item">Gin (Go)</span>
+            <span class="tech-item">SvelteKit</span>
+            <span class="tech-item">FastAPI</span>
+            <span class="tech-item">Flask</span>
+            <span class="tech-item">Jetpack Compose</span>
+          </div>
         </div>
+        <div class="tech-category">
+                <h3>
+                    <svg class="icon-inline" viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 3.79 7 6v12c0 2.21 2.24 4 5 4s5-1.79 5-4V6c0-2.21-2.24-4-5-4zm0 2c2.21 0 3 1.34 3 2s-.79 2-3 2-3-1.34-3-2 .79-2 3-2z"/></svg>
+                    Databases
+                </h3>
+                <div class="tech-list">
+                    <span class="tech-item">PostgreSQL</span><span class="tech-item">MySQL</span><span class="tech-item">Redis</span><span class="tech-item">SQLite</span>
+                </div>
+            </div>
       </div>
-      <div class="cards">
+
+      <h2 class="section-title" id="projects">
+        <svg class="icon-svg" viewBox="0 0 24 24">
+          <path
+            d="M22 13h-8v-2h8v2zm0-6h-8v2h8V7zm-8 10h8v-2h8v2zM12 7v10H2V7h10zm-1.5 8l-2.25-3-1.75 2.26L5.25 12 3 15h7.5z"
+          />
+        </svg>
+        Projects
+      </h2>
+      <div class="project-grid">
       </div>
-      <div class="footer">
-        <p class="footer-text">Email: aseytekow.04@gmail.com</p>
-      </div>
-    </div>
+    </main>
+
+    <section class="contact-section" id="contact">
+        <div class="profile-logo">
+            <img src="./static/icon.jpg" alt="Profile picture" />
+        </div>
+        <h2>Akmuhammet Seytekow</h2>
+        <a href="https://github.com/aseytekow"><span class="username">@aseytekow</span></a>
+        <p class="motto">"In a world of variables, be a constant."</p>
+
+        <div class="social-links">
+            <a href="https://instagram.com/aseytekow" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5a4.25 4.25 0 0 0-4.25 4.25v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5zm4.25 3.25a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.75-2.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            </a>
+            <a href="https://github.com/aseytekow" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.372.79 1.102.79 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://x.com/aseytekow" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://discord.gg/SrbkfqDB" class="social-icon" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            </a>
+            <a href="mailto:aseytekow.04@gmail.com" class="social-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+        </div>
+    </section>
+    <script src="./static/script.js"></script>
   </body>
 </html>
