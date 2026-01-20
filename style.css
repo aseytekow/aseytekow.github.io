@@ -2,7 +2,7 @@
 
 :root {
   --bg-color: #0b0e14;
-  --accent-color: #3b82f6;
+  --accent-color: #10b981;
   --text-color: #ffffff;
   --toolbar-glass: rgba(22, 26, 33, 0.75);
   --glass-bg: rgba(255, 255, 255, 0.05);
@@ -59,7 +59,7 @@ header {
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
   font-weight: 800;
   text-decoration: none;
   color: var(--text-color);
@@ -110,7 +110,7 @@ main {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 10vw, 4.5rem);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -121,7 +121,7 @@ main {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   color: var(--text-dim);
   max-width: 700px;
   margin: 0 auto 40px;
@@ -356,4 +356,13 @@ footer {
   .hero h1 {
     font-size: 3rem;
   }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 95%;
+        padding: 0 15px;
+        top: 15px;
+    }
+    .logo span { display: none; } /* Mobilde sadece AK kalsın istersen */
 }
